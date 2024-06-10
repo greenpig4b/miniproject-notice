@@ -1,0 +1,266 @@
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+
+    margin: 0 auto;
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    box-sizing: border-box;
+}
+section{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px 0;
+    background: #fff;
+}
+/* NAV */
+nav{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1600px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+
+}
+nav ul li a{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    font-size: 14px;
+    transition: 0.4s ease;
+}
+nav ul li a:hover{
+    color: #50B848;
+}
+nav ul li a:hover i{
+    color: #50B848ed;
+}
+nav ul li a i{
+    font-size: 14px;
+    margin-right: 5px;
+    transition: 0.2s ease;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    width:1px;
+    height: 100%;
+    right: 0;
+    background-color: #333;
+}
+nav ul li:last-child a{
+    padding: 0 0 0 10px;
+}
+nav ul li:last-child a::before{
+    width: 0;
+}
+nav ul li a{}
+
+/* 컨텐츠 head */
+.content-head{
+    text-align: center;
+}
+.content-head h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 100px 0;
+}
+
+.search-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+/* 셀렉트박스 CSS */
+.select-box {
+    position: relative;
+    display: block;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.select-box__current {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+    opacity: 1;
+    animation-name: none;
+}
+
+.select-box__current:focus .select-box__icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+}
+
+.select-box__value {
+    display: flex;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+    color: #666;
+}
+
+.select-box__list {
+    top: 55px;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    color: #666;
+    z-index: 10;
+}
+
+.select-box__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.select-box__option:hover,
+.select-box__option:focus {
+    color: #546c84;
+    background-color: #fbfbfb;
+}
+
+@keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+.submit-box{
+    position: relative;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+.submit-box .search-text{
+    outline: none;
+    width: calc(100% - 50px);
+    padding: 0;
+    border: none;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.submit-box .search-btn{
+    position: absolute;
+    background: #fff;
+    border: none;
+    width: 50px;
+    z-index: 10;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+}
+.submit-box .search-btn i{}
+
+.btn{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.main-color{
+    transition: 0.2s ease;
+    background: #50B848;
+    color: #fff;
+}
+
+.main-color:hover{
+    background: #3bd430;
+}
+
+.black-color{
+    transition: 0.2s ease;
+    background: #333;
+    color: #fff;
+}
+.black-color.join{
+    width: 100%;
+}
+.black-color.full{
+    width: 100%;
+}
+.black-color:hover{
+    background: #444;
+}
+.back-btn-wrapper{
+    width: 200px;
+}
+.back-btn-wrapper a{
+    border-radius: 5px;
+}
+
+/* h3 정리 */
+h3.title{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

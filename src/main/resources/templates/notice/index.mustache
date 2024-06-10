@@ -1,0 +1,152 @@
+{{> notice/layout/head}}
+<body>
+<main role="main">
+  {{> notice/layout/header}}
+    <section id="section01">
+        <div class="container">
+            <div class="content-head">
+                <h1>공지사항</h1>
+                <form action="#" method="#">
+                    <div class="search-wrapper">
+                        <!-- 구분 검색 -->
+                        <div class="select-box">
+                            <div class="select-box__current" tabindex="1">
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="0" value="1" name="option1" checked>
+                                    <p class="select-box__input-text">옵션1</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="1" value="2" name="option1">
+                                    <p class="select-box__input-text">옵션2</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="2" value="3" name="option1">
+                                    <p class="select-box__input-text">옵션3</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="3" value="4" name="option1">
+                                    <p class="select-box__input-text">옵션4</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="4" value="5" name="option1">
+                                    <p class="select-box__input-text">옵션5</p>
+                                </div>
+                                <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li>
+                                    <label class="select-box__option" for="0" aria-hidden="true">옵션1</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="1" aria-hidden="true">옵션2</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="2" aria-hidden="true">옵션3</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="3" aria-hidden="true">옵션4</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="4" aria-hidden="true">옵션5</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 전체 검색 -->
+                        <div class="select-box">
+                            <div class="select-box__current" tabindex="2">
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="5" value="1" name="option2" checked>
+                                    <p class="select-box__input-text">옵션5</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="6" value="2" name="option2">
+                                    <p class="select-box__input-text">옵션6</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="7" value="3" name="option2">
+                                    <p class="select-box__input-text">옵션7</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="8" value="4" name="option2">
+                                    <p class="select-box__input-text">옵션8</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="9" value="5" name="option2">
+                                    <p class="select-box__input-text">옵션9</p>
+                                </div>
+                                <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true">
+                            </div>
+                            <ul class="select-box__list">
+                                <li>
+                                    <label class="select-box__option" for="5" aria-hidden="true">옵션5</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="6" aria-hidden="true">옵션6</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="7" aria-hidden="true">옵션7</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="8" aria-hidden="true">옵션8</label>
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="9" aria-hidden="true">옵션9</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 검색 버튼 -->
+                        <div class="submit-box">
+                            <input class="search-text" type="text" name="" placeholder="검색어를 입력해주세요.">
+                            <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="content-body">
+                <ul class="notice-list">
+                    <li class="item">
+                        <div class="category head"><span>일반</span></div>
+                        <div class="body">
+                            <a href="/detail">
+                                <div class="title"><p>제목들어갈 자리입니다</p></div>
+                                <div class="date"><span>2012.05.13</span></div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="category head"><span>공지</span></div>
+                        <div class="body">
+                            <a href="/detail">
+                                <div class="title"><p>제목들어갈 자리입니다</p></div>
+                                <div class="date"><span>2012.05.13</span></div>
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="category head"><span>관리</span></div>
+                        <div class="body">
+                            <a href="/detail">
+                                <div class="title"><p>제목들어갈 자리입니다</p></div>
+                                <div class="date"><span>2012.05.13</span></div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pagenation">
+                    <li class="prev-btn"><span></span></li>
+                    <li class="prev-btn2"><span></span></li>
+                    <li class="number"><span>1</span></li>
+                    <li class="number"><span>2</span></li>
+                    <li class="number"><span>3</span></li>
+                    <li class="number"><span>4</span></li>
+                    <li class="number"><span>5</span></li>
+                    <li class="next-btn"><span></span></li>
+                    <li class="next-btn2"><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

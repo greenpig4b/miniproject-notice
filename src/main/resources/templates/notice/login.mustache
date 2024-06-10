@@ -1,0 +1,37 @@
+{{> notice/layout/head}}
+<body>
+<main role="main">
+    {{> notice/layout/header}}
+    <section id="section01" class="join">
+        <div class="container">
+            <div class="login-wrapper">
+                <form action="#" method="post">
+                    <div class="content">
+                        <div class="img-wrapper">
+                            <img src="/images/img_header_logo.png" alt="로고">
+                        </div>
+                        <span>대충 한글들어가는 텍스트</span>
+                        <div class="login-form-item">
+                            <label for="emailId">이메일</label>
+                            <div class="input-wrapper email">
+                                <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
+                            </div>
+                        </div>
+                        <div class="login-form-item">
+                            <label for="join-password">비밀번호</label>
+                            <div class="input-wrapper password">
+                                <input type="password" id="join-password" oninput="pwCheck()" placeholder="비밀번호" name="password">
+                            </div>
+                        </div>
+                        <div class="button-wrapper">
+                            <button id="emailForm"  type="submit" class="btn black-color join">로그인</button>
+                        </div>
+                        <p>아직 가입하지 않으셨나요?<a href="#">회원가입하기</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
