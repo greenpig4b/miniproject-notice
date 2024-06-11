@@ -34,7 +34,6 @@ public class SessionUser {
         this.name = user.getName();
         this.phone = user.getPhoneNumber();
         this.state = user.getState();
-        this.birth = user.getBirth();
 
     }
 }

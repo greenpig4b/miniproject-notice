@@ -3,9 +3,17 @@
         <div class="logo-wrapper">
             <a href="/"><img src="images/img_header_logo.png" alt="로고 들어갈 자리"></a>
         </div>
-        <ul>
-            <li><a href="/login"><i class="fa-solid fa-right-to-bracket"></i>로그인</a></li>
-            <li><a href="/join"><i class="fa-solid fa-user"></i>회원가입</a></li>
-        </ul>
+        {{#sessionUser}}
+            <ul>
+                <li><a href="/#"><i class="fa-regular fa-user"></i>마이페이지</a></li>
+                <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>로그아웃</a></li>
+            </ul>
+        {{/sessionUser}}
+        {{^sessionUser}}
+            <ul>
+                <li><a href="/login"><i class="fa-solid fa-right-to-bracket"></i>로그인</a></li>
+                <li><a href="/join"><i class="fa-solid fa-user"></i>회원가입</a></li>
+            </ul>
+        {{/sessionUser}}
     </nav>
 </header>

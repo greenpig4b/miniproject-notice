@@ -31,24 +31,28 @@ public class User {
     @Column(nullable = false)
     private String phoneNumber; // 전화번호
 
+    @Column(nullable = false)
+    private String address;
+
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private UserEnum state; // 상태 ON 회원가입한 유저  OFF 탈퇴한 유저
 
-    @Column(nullable = false)
-    private LocalDate birth; // 생일
+//  @Column(nullable = false)
+//  private LocalDate birth; // 생일
 
     private String image;
 
     @Builder
-    public User(Integer id, String email, String password, String name, String phoneNumber, UserEnum state, LocalDate birth, String image) {
+    public User(Integer id, String email, String password, String name, String phoneNumber, UserEnum state, String address, String image) {
         this.id = id;
         this.email = email;
         this.password = password;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.state = state;
-        this.birth = birth;
+        this.address = address;
+//      this.birth = birth;
         this.image = image;
     }
 
